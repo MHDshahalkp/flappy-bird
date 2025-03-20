@@ -200,6 +200,9 @@ function moveBird(e) {
     if (e.code == 'Space' || e.code == 'Arrowup' || e.code == 'keyX') {
         velocityY = -6.1;
     }
+    if (e.type == 'touchstart') {
+        velocityY = -6.1;
+    }
 }
 
 function detectCollision(a, b) {
